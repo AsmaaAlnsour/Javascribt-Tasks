@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #7: Simple playlist </title>
+    <link rel="stylesheet" href="exercise7.css">
+    <script>
+        /* TODO this is for you to complete */
+    </script>
+</head>
+<body>
+<p>this is your playlist, when enter the song and hit add song a list should be created withe delete button as image below</p>
+<img src="images/Screenshot_3.jpg" style="width: 90%;">
+<form>
+    <input type="text" id="songTextInput" size="40" placeholder="Song name" >
+    <input type="button" id="addButton" value="Add Song">
+</form>
+
+<ul id="playlist">
+</ul>
+<script>
+        // let x =document.getElementById("songTextInput").value;
+        // function(x){
+
+        // }
+
+var arr = document.getElementById(songTextInput).value ;
+
+
+var ul =document.getElementById("playlist") ;
+var btn =document.getElementById("addButton") ;
+btn.addEventListener("click" , function() 
+{
+arr.forEach(function(e){
+var li = document.createElement('li') ;
+li.innerText = e;
+ul.append(li);
+console.log(li)
+
+})
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let element = document.forms[0] ;
+    // let x =document.getElementById("songTextInput").value;
+    // const btn=document.getElementById("addButton");
+    // console.log(x)
+    // btn.addEventListener('click', function onClick(event) {
+    //     let createdP = document.createElement("li");
+    // element.after(x)
+    
+    
+    // })
+</script>
+</body>
+</html>
+

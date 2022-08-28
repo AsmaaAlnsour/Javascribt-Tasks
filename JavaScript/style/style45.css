@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(208, 239, 157);
+}
+.Table {
+    background-color: rgb(165, 219, 245);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 16% 16% 16% 16% 16% ; 
+    grid-template-areas: "c0 c0 c0 c0" " c1 c2 c3 c4" " c5 c6 c7 c8" " c9 c10 c11 c12" " c13 c14 c15 c16";
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: auto;
+ }
+    
+
+
+
+.Table .StandardTd {  
+ box-shadow: 10in 15in;
+    text-align: center;
+    background-color: white;
+    font-size: x-large;
+    padding: 10px;
+    color: gray;
+    box-shadow: 4px 4px;
+    width: 200%;
+}
+
+
+#green {
+background-color: rgb(232, 244, 137);
+
+}
+#red {
+    background-color: rgb(251, 146, 126);
+
+}
+.c0 {
+    
+    grid-area: c0;
+}
+.c1 {
+    grid-area: c1;
+    
+}
+.c2 {
+   
+    grid-area: c2;
+}
+.c3 {
+    
+    grid-area: c3;
+}
+.c4 {
+    
+    grid-area: c4;
+}
+
+.c5 {
+    
+    grid-area: c5;
+}
+.c6 {
+    
+    grid-area: c6;
+}
+.c7 {
+    
+    grid-area: c7;
+}
+.c8 {
+    
+    grid-area: c8;
+}
+.c9 {
+    
+    grid-area: c9;
+}
+.c10 {
+    
+    grid-area: c10;
+}
+.c11 {
+    
+    grid-area: c11;
+}
+.c12 {
+    
+    grid-area: c12;
+}
+.c13 {
+    
+    grid-area: c13;
+    
+
+}
+.c14 {
+    
+    grid-area: c14;
+}
+.c15 {
+    
+    grid-area: c15;
+}
+.c16 {
+    
+    grid-area: c16;
+}

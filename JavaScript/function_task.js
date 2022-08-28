@@ -540,38 +540,58 @@ Ex: scoreInUniversty(3)
 
 Ex: scoreInUniversty(71)
 => "C"
-*/
+// */
+
+// function scoreInUniversty(x){
+//   if(x <= 100 && x >= 95 ){
+//     return  console.log ( "A")
+//   }
+//   else if(x <= 94 && x >= 85) {
+//     return  console.log ( "B")
+
+//   }
+//   else if(x <= 84 && x >= 70) {
+//     return  console.log ( "C")
+
+//   }
+//   else if( x<= 69 &&  x>= 50 ) {
+//     return  console.log ( "D")
+
+//   }
+//   else if(x <= 49 && x >= 0) {
+//     return  console.log ( "F")
+
+//   }
+//   else{
+//     window.alert ("Please Check the Score" )
+//   }
+// }
+// scoreInUniversty(96)
+
+// scoreInUniversty(3)
+
+// scoreInUniversty(71)
 function scoreInUniversty(x){
-  if(x <= 100 && x >= 95 ){
-    return  console.log ( "A")
-  }
-  else if(x <= 94 && x >= 85) {
-    return  console.log ( "B")
+switch (true) {
+case x<= 100 && x>= 95:
+console.log ("A");
+break;
+case x<= 94 && x>= 85:
+console.log ("B");
+break;
+case x<= 84 && x>= 70:
+console.log ("C");
+break;
+case x<= 69 &&  x>= 50:
+console.log ("D");
+break;
+case x<= 49 && x>= 0:
+console.log ("F");
+default:
+  console.log("Please Check the Score")
+}}
 
-  }
-  else if(x <= 84 && x >= 70) {
-    return  console.log ( "C")
-
-  }
-  else if(x <= 69 && x >= 50) {
-    return  console.log ( "D")
-
-  }
-  else if(x <= 49 && x >= 0) {
-    return  console.log ( "F")
-
-  }
-  else{
-    window.alert ("Please Check the Score" )
-  }
-}
-scoreInUniversty(96)
-
-scoreInUniversty(3)
-
-scoreInUniversty(71)
-
-
+scoreInUniversty(95)
 /*
 23
 Write a function called counter
@@ -589,6 +609,8 @@ Ex: counter()
 => 3
 
 */
+
+
 var x=0
 
 function counter(){
@@ -599,6 +621,9 @@ counter()
 counter()
 counter()
 counter()
+
+
+
 
 /*
 24
@@ -631,6 +656,9 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 */
+
+
+
 
 function resetCounter(){
   

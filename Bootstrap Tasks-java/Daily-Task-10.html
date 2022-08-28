@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        input {
+            border-color: rgb(191, 191, 191);
+            width: 60%;
+            height: 40px;
+        }
+
+        #form {
+            margin-left: 25%;
+        }
+
+        h1 {
+            padding-top: 30px;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            margin-bottom: 1.25rem;
+            font-size: 2.125rem;
+            line-height: 1;
+            letter-spacing: -.0625rem;
+            font-family: HelvNeueOrange, Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+
+        .navbar-brand img {
+            width: 100%;
+            height: 65px;
+        }
+
+        .containeer-navbar {
+            border-bottom: 2px solid black;
+        }
+
+        .btn {
+            height: 50px;
+            width: 60%;
+            background-color: rgb(255, 121, 0);
+            border: rgb(252, 164, 0);
+            color: black;
+        }
+
+        .form-check-input {
+            
+            color: orange;
+
+        }
+        .flex{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mb-4{
+            display: flex;
+        }
+        .form-control{
+            width: 450px;
+        }
+        .glyphicon{
+        right: 25px;
+  top: 5px;
+  font-size: 20px;
+  color: black ;
+  cursor: pointer;
+}
+.glyphicon.active {
+  color: #0088ff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="row all">
+        <div id="carouselExampleIndicators" class=" col-4 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Img/10.1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/10.2.jpg" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="col-8 right">
+            <div class="containeer-navbar">
+                <nav class="navbar navbar-expand-sm navbar-light  p-2 navbar-radius: 1000px;">
+                    <div class="flex">
+                        <div>
+                            <a class="navbar-brand" href="#">
+                                <img src="https://orangecodingacademy.com/assets/boosted/dist/img/white.png" alt="">
+                            </a>
+
+                        </div>
+                        <div>
+
+                            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-list"><span
+                                    class="navbar-toggler-icon"></span></button>
+                            <ul id="navbar-list" class="navbar-nav collapse navbar-collapse">
+                                <li class="nav-item"><a class="nav-link active" href="#"><b>Help</b></a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#"><b>Terms & Conditions</b> </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+            <div id="form">
+                <form>
+                    <h1>Create an account</h1><br><br>
+                    <fieldset>
+                        <div>
+                            <div >
+                                <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+                                <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"></div></div>
+                                <div id="emailHelp" class="form-text">eg: username@domain.com</div>
+                                <p class="help-block"></p>
+                                <p class="help-block"></p>
+
+                            </div>
+                            <div >
+                                <label for="exampleInputEmail1" class="form-label"><b>Mobile</b></label>
+                                <div class="mobailc">
+                                <input type="number" class="form-control" id="exampleInput2"></div>
+                                <div id="emailHelp" class="form-text">eg: 077********</div>
+                                <p class="help-block"></p>
+                                <p class="help-block"></p>
+
+                            </div>
+
+
+
+
+                            <div >
+                                <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+                                <div class="mb-4">
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <i class="glyphicon glyphicon-eye-open"></i>
+                            </div>
+                            <div class="mb-44"></div>
+                            </div>
+                            <div id="emailHelp" class="form-text">The Password should be between 6-18 characters.</div>
+                            <p class="help-block"></p>
+                            <p class="help-block"></p>
+
+
+                            <div>
+                                <div class="mb-5 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><b>I agree to the terms &
+                                            conditions Orange. *</b></label><div class="mb-6"></div>
+                                </div>
+                                <p class="help-block"></p>
+                                <p class="help-block"></p>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label" for="exampleCheck1"><b>Receive Coding Academy
+                                            Newsletter.</b></label>
+                                </div>
+                                <p class="help-block"></p>
+                                <p class="help-block"></p>
+                            </div>
+                            <button type="submit" class="btn btn-primary"  onclick="myFunction(event)"><b>Sign up</b> </button><br>
+                            <p class="help-block"></p>
+                            <p class="help-block"></p>
+                            <button type="button" class="btn btn-primary"   ><b> Already have an account?login
+                                </b></button>
+
+                        </div>
+                    </fieldset>
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+<script>
+        // window.localStorage.clear();
+        var i=0
+        var a =3 ;
+        var b =3 ;
+        var c =3 ;
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let email = document.getElementById("exampleInputEmail1");
+let password = document.getElementById("exampleInputPassword1") ;
+let mobail=document.getElementById("exampleInput2") ;
+let check1 = document.getElementById("exampleCheck1") ;
+let check2 = document.getElementById("exampleCheck2") ;
+var message4 = document.getElementsByClassName('mb-6')[0];
+
+var message3 = document.getElementsByClassName('mobailc')[0];
+
+var message2 = document.getElementsByClassName('mb-44')[0];
+
+var message1 = document.getElementsByClassName('mb-3')[0];
+var goodColor = "#66cc66";
+        var badColor = "#ff6666";
+
+
+function myFunction(event){
+        let emailvalid = false ;
+    let passwordvalid = false ;
+    let mobailvalid = false ;
+    let check1valid = false ;
+    let check2valid = false ;
+    var goodColor = "#66cc66";
+        var badColor = "#ff6666";
+
+        
+    
+if(email.value !== "" && email.value.match(validRegex)){
+    emailvalid = true ;
+}
+if(password.value !== "" &&  password.value.length>= 6 && password.value.length<= 18){
+    passwordvalid = true ;
+}
+if(mobail.value !== "" && mobail.value.length ==10 ){
+    mobailvalid = true ;
+}
+
+
+if (check1.checked == true ){
+    check1valid = true ;
+}
+
+if (check2.checked == false ){
+    check2.checked = true ;
+}
+
+if (emailvalid == true && passwordvalid == true && mobailvalid == true && check1valid == true ){
+
+    let formData =JSON.parse(localStorage.getItem('formData')) || [];
+    formData.push({
+        email :  email.value,
+mobail :  mobail.value,
+        password : password.value
+    });
+localStorage.setItem('formData' , JSON.stringify(formData));
+
+
+
+
+//     var users = [];
+
+// var newuser = {
+// "email": email.value,
+// "mobail": mobail.value,
+// "password": password.value
+// };
+
+// users.push(newuser);
+
+// localStorage.setItem("users", JSON.stringify(users));
+
+
+// var retrievedObject = localStorage.getItem("users");
+// var stored          = JSON.parse(retrievedObject);
+
+
+
+// var newuser2 = {
+//     "email":        email.value,
+//     "mobail":         mobail.value,
+//     "password": password.value
+// };
+
+// stored.push(newuser2);
+
+// localStorage.setItem("users", JSON.stringify(stored));
+// var result = localStorage.getItem("users");
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // window.localStorage.setItem("email"+a++ , email.value);
+    // window.localStorage.setItem("mobail"+b++  , mobail.value);
+    // window.localStorage.setItem("password"+c++ , password.value);
+
+
+
+
+
+    
+}
+
+
+if (emailvalid == false || passwordvalid == false || mobailvalid == false || check1valid == false ){
+
+    event.preventDefault();
+
+if(email.value == "" ){
+    message1.style.color = badColor ;
+    message1.style.fontWeight = "bold" ;
+    message1.append("The email field is required.") ;
+    document.getElementById("exampleInputEmail1").style.borderColor =badColor
+
+}
+if(email.value.match(validRegex)  )   {
+console.log ("True") 
+} else
+{
+    message1.style.color = badColor ;
+    message1.style.fontWeight = "bold" ;
+    message1.append("The email must be a valid email address.") ;
+    document.getElementById("exampleInputEmail1").style.borderColor =badColor
+}
+if(password.value == "" ){
+    message2.style.color = badColor ;
+    message2.style.fontWeight = "bold" ;
+    message2.append("The password field is required.") ;
+    document.getElementById("exampleInputPassword1").style.borderColor =badColor
+
+
+}
+
+
+if ( password.value.length< 6 && password.value !== ""  ){
+    message2.style.color = badColor ;
+    message2.style.fontWeight = "bold" ;
+    message2.append("The password must be at least 6 characters.") ;
+    document.getElementById("exampleInputPassword1").style.borderColor =badColor
+
+}
+if ( password.value.length > 18){
+message2.style.color = badColor ;
+    message2.style.fontWeight = "bold" ;
+    message2.append("The password may not be greater than 18 characters.") ;
+    document.getElementById("exampleInputPassword1").style.borderColor =badColor
+
+}
+if(mobail.value == "" ){
+    message3.style.color = badColor ;
+    message3.style.fontWeight = "bold" ;
+    message3.append("The mobile field is required.") ;
+    document.getElementById("exampleInput2").style.borderColor =badColor
+
+}
+if ( mobail.value.length !=10 && mobail.value != ""){
+
+    message3.style.color = badColor ;
+    message3.style.fontWeight = "bold" ;
+    message3.append("The mobile must be 10 characters.") ;
+    document.getElementById("exampleInput2").style.borderColor =badColor
+
+}
+if (check1.checked == false ){
+    message4.style.color = badColor ;
+    message4.fontWeight = "bold" ;
+    message4.append("The Terms & Conditions Not Checked") ;
+
+}
+// if (emailvalid == true && passwordvalid == true && mobailvalid == true && check1valid == true ){
+//     window.localStorage.setItem("email", email.value);
+//     window.localStorage.setItem("mobail", mobail.value);
+//     window.localStorage.setItem("password", password.value);
+
+// };
+
+}}
+$('.glyphicon').on('click', function() {
+var attr =
+    $(this)
+    .prev()
+    .attr('type') == 'password'
+? 'text'
+: 'password';
+$(this)
+    .prev()
+    .attr('type', attr);
+$(this).toggleClass('active');
+});
+
+</script>
+</body>
+
+</html>
