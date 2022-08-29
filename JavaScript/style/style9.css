@@ -1,7 +1,7 @@
 body{
     background-color: rgb(208, 239, 157);
 }
-.main {
+.Table {
     background-color: rgb(165, 219, 245);
     display: grid;
     align-content: center;
@@ -19,25 +19,28 @@ body{
 
 
 
-.main button { 
-    /* box-shadow: 10in 15in; */
+.Table .StandardTd {  
+ box-shadow: 10in 15in;
     text-align: center;
     background-color: white;
-    padding: 17px; 
     font-size: x-large;
+    padding: 10px;
     color: gray;
     box-shadow: 4px 4px;
+    width: 200%;
 }
-.green {
+
+
+#green {
 background-color: rgb(232, 244, 137);
 
 }
-.red {
+#red {
     background-color: rgb(251, 146, 126);
 
 }
 .c0 {
-    background-color: white;
+    
     grid-area: c0;
 }
 .c1 {
